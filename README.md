@@ -24,7 +24,7 @@
 [Kafka](http://elixirforum.com/clicks/track?url=http%3A%2F%2Fkafka.apache.org%2F&post_id=641&topic_id=154) is a high-throughput distributed messaging system.
 
 * [KafkaEx](http://elixirforum.com/clicks/track?url=https%3A%2F%2Fgithub.com%2Fkafkaex%2Fkafka_ex&post_id=641&topic_id=154) - someone has dutifully made an Elixir library for Kafka using a binary interface
-* RethinkDB
+* [RethinkDB](https://www.rethinkdb.com)
 
 ### DOA
 
