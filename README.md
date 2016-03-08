@@ -3,7 +3,7 @@
 ## Common points for a distributed architecture
 
 * Open source tools
-* [Elixir](http://elixir-lang.org) can be the future of data handling and distribution on the Web
+* [Elixir](http://elixir-lang.org) is the future of data handling and distribution on the Web
 * Lambda or pseudo-lambda ? or whatever
 * A close interaction among *Elixir* and *Python* tools and libraries (via Web interface or not)
 * Low barriers in terms of learning curve and computation costs
@@ -17,6 +17,12 @@
 * [HttpFS (REST API for HDFS)](http://hadoop.apache.org/docs/current/hadoop-hdfs-httpfs/index.html)
 * [C API libhdfs](http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/LibHdfs.html) could be wrapped with an Elixir NIF
 
+### DOA
+
+    Apache Spark2 - Java or Python interface
+    Apache Storm1 - JVM + Clojure DSL; uses Apache Thrift, so non-JVM interfaces are feasible
+    Apache Samza2 - JVM + Clojure DSL1; non-JVM support is on the roadmap1
+    Apache Flink - JVM-only; example of Clojure implementation1
 
 ### Messaging and queues
 
@@ -25,18 +31,21 @@
 * [KafkaEx](http://elixirforum.com/clicks/track?url=https%3A%2F%2Fgithub.com%2Fkafkaex%2Fkafka_ex&post_id=641&topic_id=154) someone has dutifully made an Elixir library for Kafka using a binary interface
 * [RethinkDB](https://www.rethinkdb.com)
 
-### DOA
-
-    Apache Spark2 - Java or Python interface
-    Apache Storm1 - JVM + Clojure DSL; uses Apache Thrift, so non-JVM interfaces are feasible
-    Apache Samza2 - JVM + Clojure DSL1; non-JVM support is on the roadmap1
-    Apache Flink - JVM-only; example of Clojure implementation1
-    
+### Databases
+* [VoltDB](https://github.com/VoltDB/voltdb) In-memory, alpha drivers for Erlang
+* [CockRoachDB](https://github.com/cockroachdb/cockroach) Distributed SQL database built on top of a transactional and consistent key:value store
+   
 ### Highly Distributed File Systems for data
 
 * [HDFS (used by Hadoop)](https://en.wikipedia.org/wiki/Apache_Hadoop#File_systems)
 * [Hierarchical Data Format or HDF5](https://www.hdfgroup.org/why_hdf/) (used by many research facilities). It's a standard to work with data spawning on many machines
 * [netCDF4](http://www.unidata.ucar.edu/software/netcdf/) (a network standard to exchange HDF5 data)
+* [DiscoFS](http://disco.readthedocs.org/en/latest/howto/ddfs.html)
+
+### Querying directly on FS
+
+* [HDF5 fast-querying](https://www.hdfgroup.org/products/hdf5_tools/SWSummarybyType.htm)
+* [HDF5 indexing prototyping](https://www.hdfgroup.org/products/hdf5_tools/SWSummarybyType.htm)
 
 ### map and reduce
 
@@ -59,4 +68,4 @@
 ### Geodata
 * [Defining a microservices architecture to serve data using standard interfaces (REST)](https://lnkd.in/dwtt5PX)
 
-   Every microservices would handle few variables indexed by geopoints and its aggregates
+   Every microservices can handle few variables indexed by geopoints and their aggregates
