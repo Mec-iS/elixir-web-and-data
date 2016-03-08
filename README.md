@@ -75,15 +75,15 @@
 
 #### Example for data pipeline
 * Hypothesis:
-    low-cost implementation
-    querying directly the FS, 
-    heavy reads, 
-    limited writes, 
-    two 'kinds' of services in parallel: *live* and *archive* (pseudo-lambda) 
+    ** low-cost implementation,
+    ** querying directly the FS, 
+    ** heavy reads, 
+    ** limited writes, 
+    ** two 'kinds' of services in parallel: *live* and *archive* (pseudo-lambda) 
 * Data pipeline: 
-    Stack reads/writes on live data
-    Stack does archive only every x seconds (a 'tick')
-    Stack runs analytics (aggregates analysis) by reading archive data from the FS with a delay of x seconds (supported by caching)
+    ** Stack reads/writes on live data
+    ** Stack does archive only every x seconds (a 'tick')
+    ** Stack runs analytics (aggregates analysis) by reading archive data from the FS with a delay of x seconds (supported by caching)
 * Architecture:
     ...
     ...
