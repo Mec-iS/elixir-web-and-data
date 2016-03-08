@@ -17,11 +17,10 @@
 * [HttpFS (REST API for HDFS)](http://hadoop.apache.org/docs/current/hadoop-hdfs-httpfs/index.html)
 * [C API libhdfs](http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/LibHdfs.html) could be wrapped with an Elixir NIF
 
-[Disco](http://elixirforum.com/clicks/track?url=https%3A%2F%2Fgithub.com%2Fdiscoproject%2Fdisco&post_id=641&topic_id=154) is a distributed map-reduce and big-data framework that is similar to Hadoop. It is written in Erlang, but exposes a Python interface; I have not found any Erlang API docs, but it should be feasible to create an Elixir library from it.
 
-### Apache Kafka
+### Messaging and queues
 
-[Kafka](http://elixirforum.com/clicks/track?url=http%3A%2F%2Fkafka.apache.org%2F&post_id=641&topic_id=154) is a high-throughput distributed messaging system.
+[Apache Kafka](http://elixirforum.com/clicks/track?url=http%3A%2F%2Fkafka.apache.org%2F&post_id=641&topic_id=154) is a high-throughput distributed messaging system.
 
 * [KafkaEx](http://elixirforum.com/clicks/track?url=https%3A%2F%2Fgithub.com%2Fkafkaex%2Fkafka_ex&post_id=641&topic_id=154) someone has dutifully made an Elixir library for Kafka using a binary interface
 * [RethinkDB](https://www.rethinkdb.com)
@@ -42,6 +41,8 @@
 ### map and reduce
 
 * [Disco](http://discoproject.org)
+
+[Disco](http://elixirforum.com/clicks/track?url=https%3A%2F%2Fgithub.com%2Fdiscoproject%2Fdisco&post_id=641&topic_id=154) is a distributed map-reduce and big-data framework that is similar to Hadoop. It is written in Erlang, but exposes a Python interface; I have not found any Erlang API docs, but it should be feasible to create an Elixir library from it.
 
 ## Experiences and blogposts
 
