@@ -39,11 +39,23 @@
 * [Hierarchical Data Format or HDF5](https://www.hdfgroup.org/why_hdf/) (used by many research facilities). It's a standard to work with data spawning on many machines. 
 * [netCDF4](http://www.unidata.ucar.edu/software/netcdf/) (a network standard to exchange HDF5 data)
 
+### map and reduce
+
+* [Disco](http://discoproject.org)
+
 ## Experiences and blogposts
 
-* [Defining a micro-services architecture to serve data using standard interfaces (REST)](https://lnkd.in/dwtt5PX)
+* [Erlang Big-data track](http://www.erlang-factory.com/conference/ErlangUserConference2013/tracks/bigdata)
 
 ## Performance
 
 * [Benchmark post of this from some engineers at Yahoo](https://yahooeng.tumblr.com/post/135321837876/benchmarking-streaming-computation-engines-at)
 * [Software Engineering Daily podcast talking about the results](http://softwareengineeringdaily.com/2016/02/03/benchmarking-stream-processing-frameworks-with-bobby-evans/)
+
+
+## Possible applications
+
+### Geodata
+* [Defining a microservices architecture to serve data using standard interfaces (REST)](https://lnkd.in/dwtt5PX)
+
+Every microservices would handle few variables indexed by geopoints and its aggregates
